@@ -19,7 +19,6 @@ def is_in_unit_circle(points: np.ndarray) -> np.ndarray:
 
 if __name__ == '__main__':
     n_points = int(sys.argv[1])
-
     comm = MPI.COMM_WORLD
     rank = comm.Get_rank()
     n_processes = comm.Get_size()
